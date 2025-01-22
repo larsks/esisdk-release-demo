@@ -234,9 +234,9 @@ name = "cmd2"
 version = "2.5.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "gnureadline", marker = "platform_system == 'Darwin'" },
+    { name = "gnureadline", marker = "sys_platform == 'darwin'" },
     { name = "pyperclip" },
-    { name = "pyreadline3", marker = "platform_system == 'Windows'" },
+    { name = "pyreadline3", marker = "sys_platform == 'win32'" },
     { name = "wcwidth" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/2c/ed/a48e6b3cc8f56c6b43381a6eaf9cc6dc5ca6efe496ea962f0635574c1a0a/cmd2-2.5.8.tar.gz", hash = "sha256:ddf29beaa7c9d4e9806eefad528a59c372ca97b4c0d83e019fef0e37c44f4497", size = 592395 }
@@ -474,7 +474,7 @@ wheels = [
 
 [[package]]
 name = "esisdk"
-version = "1.5.dev1+g323d394.d20250120"
+version = "1.5.dev3+g95dbc67.d20250122"
 source = { editable = "." }
 dependencies = [
     { name = "openstacksdk", version = "4.0.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },

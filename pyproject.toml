@@ -44,3 +44,11 @@ dev = [
 
 [tool.setuptools_scm]
 
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease = false
+
+[tool.semantic_release.branches.feature]
+match = "feature/*"
+prerelease = true
+prerelease_token = "dev"
